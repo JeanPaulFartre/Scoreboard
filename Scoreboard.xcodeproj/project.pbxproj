@@ -114,12 +114,9 @@
 		8B76839B19B7940400C3ECC5 /* Scoreboard */ = {
 			isa = PBXGroup;
 			children = (
-				8B7683A419B7940400C3ECC5 /* AppDelegate.h */,
-				8B7683A519B7940400C3ECC5 /* AppDelegate.m */,
-				8B7683A719B7940400C3ECC5 /* Main_iPhone.storyboard */,
-				8B7683AA19B7940400C3ECC5 /* Main_iPad.storyboard */,
-				8B7683AD19B7940400C3ECC5 /* ViewController.h */,
-				8B7683AE19B7940400C3ECC5 /* ViewController.m */,
+				8B7683CF19B7941D00C3ECC5 /* Model */,
+				8B7683CE19B7941400C3ECC5 /* Controller */,
+				8B7683CD19B7940B00C3ECC5 /* View */,
 				8B7683B019B7940400C3ECC5 /* Images.xcassets */,
 				8B76839C19B7940400C3ECC5 /* Supporting Files */,
 			);
@@ -153,6 +150,33 @@
 				8B7683C019B7940400C3ECC5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8B7683CD19B7940B00C3ECC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8B7683A719B7940400C3ECC5 /* Main_iPhone.storyboard */,
+				8B7683AA19B7940400C3ECC5 /* Main_iPad.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		8B7683CE19B7941400C3ECC5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8B7683AD19B7940400C3ECC5 /* ViewController.h */,
+				8B7683AE19B7940400C3ECC5 /* ViewController.m */,
+				8B7683A419B7940400C3ECC5 /* AppDelegate.h */,
+				8B7683A519B7940400C3ECC5 /* AppDelegate.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		8B7683CF19B7941D00C3ECC5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

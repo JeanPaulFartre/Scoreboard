@@ -15,13 +15,15 @@
 		8B7683A619B7940400C3ECC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7683A519B7940400C3ECC5 /* AppDelegate.m */; };
 		8B7683A919B7940400C3ECC5 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7683A719B7940400C3ECC5 /* Main_iPhone.storyboard */; };
 		8B7683AC19B7940400C3ECC5 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8B7683AA19B7940400C3ECC5 /* Main_iPad.storyboard */; };
-		8B7683AF19B7940400C3ECC5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7683AE19B7940400C3ECC5 /* ViewController.m */; };
+		8B7683AF19B7940400C3ECC5 /* ScoreboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7683AE19B7940400C3ECC5 /* ScoreboardViewController.m */; };
 		8B7683B119B7940400C3ECC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8B7683B019B7940400C3ECC5 /* Images.xcassets */; };
 		8B7683B819B7940400C3ECC5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B7683B719B7940400C3ECC5 /* XCTest.framework */; };
 		8B7683B919B7940400C3ECC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B76839519B7940400C3ECC5 /* Foundation.framework */; };
 		8B7683BA19B7940400C3ECC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B76839919B7940400C3ECC5 /* UIKit.framework */; };
 		8B7683C219B7940400C3ECC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B7683C019B7940400C3ECC5 /* InfoPlist.strings */; };
 		8B7683C419B7940400C3ECC5 /* ScoreboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7683C319B7940400C3ECC5 /* ScoreboardTests.m */; };
+		8B7683D519B8B7DC00C3ECC5 /* GameRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7683D419B8B7DC00C3ECC5 /* GameRules.m */; };
+		8B7683DE19B8D29900C3ECC5 /* DefineGameRulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7683DD19B8D29900C3ECC5 /* DefineGameRulesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,14 +49,18 @@
 		8B7683A519B7940400C3ECC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8B7683A819B7940400C3ECC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		8B7683AB19B7940400C3ECC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		8B7683AD19B7940400C3ECC5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		8B7683AE19B7940400C3ECC5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8B7683AD19B7940400C3ECC5 /* ScoreboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScoreboardViewController.h; sourceTree = "<group>"; };
+		8B7683AE19B7940400C3ECC5 /* ScoreboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreboardViewController.m; sourceTree = "<group>"; };
 		8B7683B019B7940400C3ECC5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		8B7683B619B7940400C3ECC5 /* ScoreboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScoreboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B7683B719B7940400C3ECC5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		8B7683BF19B7940400C3ECC5 /* ScoreboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScoreboardTests-Info.plist"; sourceTree = "<group>"; };
 		8B7683C119B7940400C3ECC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B7683C319B7940400C3ECC5 /* ScoreboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreboardTests.m; sourceTree = "<group>"; };
+		8B7683D319B8B7DC00C3ECC5 /* GameRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRules.h; sourceTree = "<group>"; };
+		8B7683D419B8B7DC00C3ECC5 /* GameRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameRules.m; sourceTree = "<group>"; };
+		8B7683DC19B8D29900C3ECC5 /* DefineGameRulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineGameRulesViewController.h; sourceTree = "<group>"; };
+		8B7683DD19B8D29900C3ECC5 /* DefineGameRulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineGameRulesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,10 +170,12 @@
 		8B7683CE19B7941400C3ECC5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				8B7683AD19B7940400C3ECC5 /* ViewController.h */,
-				8B7683AE19B7940400C3ECC5 /* ViewController.m */,
+				8B7683AD19B7940400C3ECC5 /* ScoreboardViewController.h */,
+				8B7683AE19B7940400C3ECC5 /* ScoreboardViewController.m */,
 				8B7683A419B7940400C3ECC5 /* AppDelegate.h */,
 				8B7683A519B7940400C3ECC5 /* AppDelegate.m */,
+				8B7683DC19B8D29900C3ECC5 /* DefineGameRulesViewController.h */,
+				8B7683DD19B8D29900C3ECC5 /* DefineGameRulesViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -175,6 +183,8 @@
 		8B7683CF19B7941D00C3ECC5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8B7683D319B8B7DC00C3ECC5 /* GameRules.h */,
+				8B7683D419B8B7DC00C3ECC5 /* GameRules.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -277,9 +287,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8B7683AF19B7940400C3ECC5 /* ViewController.m in Sources */,
+				8B7683AF19B7940400C3ECC5 /* ScoreboardViewController.m in Sources */,
 				8B7683A619B7940400C3ECC5 /* AppDelegate.m in Sources */,
 				8B7683A219B7940400C3ECC5 /* main.m in Sources */,
+				8B7683DE19B8D29900C3ECC5 /* DefineGameRulesViewController.m in Sources */,
+				8B7683D519B8B7DC00C3ECC5 /* GameRules.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,6 +506,7 @@
 				8B7683C919B7940400C3ECC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8B7683CA19B7940400C3ECC5 /* Build configuration list for PBXNativeTarget "ScoreboardTests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +515,7 @@
 				8B7683CC19B7940400C3ECC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

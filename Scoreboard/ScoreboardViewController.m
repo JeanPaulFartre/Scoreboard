@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 ___FULLUSERNAME___. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ScoreboardViewController.h"
 
-@interface ViewController ()
+@interface ScoreboardViewController ()
 
 @end
 
-@implementation ViewController
+@implementation ScoreboardViewController
 
 - (void)viewDidLoad
 {

@@ -12,7 +12,7 @@
 
 
 
--(id) initWithNameAndIncrement:(NSString *)name Increment:(NSInteger *) increment{
+-(id) initWithNameAndIncrement:(NSString *)name Increment:(int) increment{
     if ( self = [super init]){
         self->_name = name;
         self-> _pointIncrement = increment;

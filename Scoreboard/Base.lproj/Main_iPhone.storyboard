@@ -46,11 +46,17 @@
                                 <rect key="frame" x="31" y="214" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="changeTeamOneScore:" destination="x5A-6p-PRh" eventType="valueChanged" id="nUg-nT-m5D"/>
+                                </connections>
                             </stepper>
                             <stepper opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="FGT-Lh-gM4">
                                 <rect key="frame" x="186" y="214" width="94" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="changeTeamTwoScore:" destination="x5A-6p-PRh" eventType="valueChanged" id="sco-BL-Z2N"/>
+                                </connections>
                             </stepper>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vmr-tQ-aCc">
                                 <rect key="frame" x="69" y="475" width="182" height="36"/>
@@ -68,6 +74,12 @@
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="ILj-Az-sb2"/>
+                    <connections>
+                        <outlet property="teamOneScore" destination="5tS-mt-2RX" id="CO8-uJ-rj5"/>
+                        <outlet property="teamOneStepper" destination="wxN-24-Ndc" id="12r-uX-hXf"/>
+                        <outlet property="teamTwoScore" destination="lXg-oy-nUp" id="n2S-Ze-tdR"/>
+                        <outlet property="teamTwoStepper" destination="FGT-Lh-gM4" id="7AR-AF-tQS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
@@ -133,7 +145,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1aJ-bt-XFp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="751" y="125"/>
+            <point key="canvasLocation" x="758" y="61"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

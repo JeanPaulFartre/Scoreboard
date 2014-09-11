@@ -9,9 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface GameRules : NSObject
-@property (readonly) NSString* name;
-@property (readonly) NSInteger* pointIncrement;
+@property (readwrite, nonatomic) NSString* name;
+@property (readwrite, nonatomic) int pointIncrement;
 
--(id) initWithNameAndIncrement:(NSString *)name Increment:(NSInteger *) increment;
+-(id) initWithNameAndIncrement:(NSString *)name Increment:(int) increment;
 
 @end

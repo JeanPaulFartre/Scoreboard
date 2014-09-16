@@ -23,7 +23,6 @@
 -(IBAction)segueToEditGameRules;
 -(void)setModel:(Game *)model;
 -(void)resetGame;
--(void)recoverGame:(Game *)model;
 -(IBAction)endGame;
 
 @end

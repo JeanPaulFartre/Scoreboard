@@ -35,14 +35,6 @@
     [self initializeViews];
 }
 
--(void)recoverGame:(Game *)model{
-    self->_teamOneScore.text = [NSString stringWithFormat:@"%d", model.teamOneScore];
-    self->_teamOneScore.text = [NSString stringWithFormat:@"%d", model.teamTwoScore];
-    self->_teamTwoStepper.value = model.teamTwoScore;
-    self->_teamOneStepper.value = model.teamOneScore;
-    self->_teamOneStepper.stepValue = model.pointStepFactor;
-    self->_teamTwoStepper.stepValue = model.pointStepFactor;
-}
 
 -(void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
     [self resetGame];

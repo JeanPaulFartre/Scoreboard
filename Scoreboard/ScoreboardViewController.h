@@ -5,14 +5,12 @@
 //  Created by Brian Munoz on 9/3/14.
 //  Copyright (c) 2014 ___FULLUSERNAME___. All rights reserved.
 //
-#import "GameRules.h"
+#import "Game.h"
 #import <UIKit/UIKit.h>
 
-@interface ScoreboardViewController : UIViewController
+@interface ScoreboardViewController : UIViewController <UIAlertViewDelegate>
 
--(void) segueToEditGameRules;
-
-@property (readwrite, nonatomic) GameRules *currentGameRules;
+@property (readwrite, nonatomic) Game *model;
 
 @property (readwrite, nonatomic) IBOutlet UILabel *teamOneScore;
 @property (readwrite, nonatomic) IBOutlet UILabel *teamTwoScore;
@@ -22,5 +20,10 @@
 
 -(IBAction)changeTeamOneScore:(UIStepper *)stepper;
 -(IBAction)changeTeamTwoScore:(UIStepper *)stepper;
+-(IBAction)segueToEditGameRules;
+-(void)setModel:(Game *)model;
+-(void)resetGame;
+-(void)recoverGame:(Game *)model;
+-(IBAction)endGame;
 
 @end

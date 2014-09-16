@@ -22,7 +22,7 @@
 		8B7683BA19B7940400C3ECC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B76839919B7940400C3ECC5 /* UIKit.framework */; };
 		8B7683C219B7940400C3ECC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8B7683C019B7940400C3ECC5 /* InfoPlist.strings */; };
 		8B7683C419B7940400C3ECC5 /* ScoreboardTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7683C319B7940400C3ECC5 /* ScoreboardTests.m */; };
-		8B7683D519B8B7DC00C3ECC5 /* GameRules.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7683D419B8B7DC00C3ECC5 /* GameRules.m */; };
+		8B7683D519B8B7DC00C3ECC5 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7683D419B8B7DC00C3ECC5 /* Game.m */; };
 		8B7683DE19B8D29900C3ECC5 /* DefineGameRulesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B7683DD19B8D29900C3ECC5 /* DefineGameRulesViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -57,8 +57,8 @@
 		8B7683BF19B7940400C3ECC5 /* ScoreboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScoreboardTests-Info.plist"; sourceTree = "<group>"; };
 		8B7683C119B7940400C3ECC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8B7683C319B7940400C3ECC5 /* ScoreboardTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScoreboardTests.m; sourceTree = "<group>"; };
-		8B7683D319B8B7DC00C3ECC5 /* GameRules.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameRules.h; sourceTree = "<group>"; };
-		8B7683D419B8B7DC00C3ECC5 /* GameRules.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameRules.m; sourceTree = "<group>"; };
+		8B7683D319B8B7DC00C3ECC5 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		8B7683D419B8B7DC00C3ECC5 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		8B7683DC19B8D29900C3ECC5 /* DefineGameRulesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DefineGameRulesViewController.h; sourceTree = "<group>"; };
 		8B7683DD19B8D29900C3ECC5 /* DefineGameRulesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DefineGameRulesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -183,8 +183,8 @@
 		8B7683CF19B7941D00C3ECC5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8B7683D319B8B7DC00C3ECC5 /* GameRules.h */,
-				8B7683D419B8B7DC00C3ECC5 /* GameRules.m */,
+				8B7683D319B8B7DC00C3ECC5 /* Game.h */,
+				8B7683D419B8B7DC00C3ECC5 /* Game.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -291,7 +291,7 @@
 				8B7683A619B7940400C3ECC5 /* AppDelegate.m in Sources */,
 				8B7683A219B7940400C3ECC5 /* main.m in Sources */,
 				8B7683DE19B8D29900C3ECC5 /* DefineGameRulesViewController.m in Sources */,
-				8B7683D519B8B7DC00C3ECC5 /* GameRules.m in Sources */,
+				8B7683D519B8B7DC00C3ECC5 /* Game.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

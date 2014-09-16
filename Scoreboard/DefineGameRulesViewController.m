@@ -7,12 +7,16 @@
 //
 
 #import "DefineGameRulesViewController.h"
+#import "ScoreboardViewController.h"
 
 @interface DefineGameRulesViewController ()
 
 @end
 
 @implementation DefineGameRulesViewController
+
+int lastStep;
+
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,7 +30,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self->_pointStepFactor.text = [NSString stringWithFormat:@"%d",self->_model.pointStepFactor];
+}
+
+-(void)setModel:(Game *)model{
+    _model = model;
 }
 
 - (void)didReceiveMemoryWarning
@@ -35,17 +43,21 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    NSString *identifier = [segue identifier];
+    ScoreboardViewController *scoreboard = [segue destinationViewController];
+    
+    //make sure to reset the scores if the user decides to change the step factor
+    if ([identifier isEqual:@"ConfirmGameRules"]){
+        self->_model.teamOneScore = 0;
+        self->_model.teamTwoScore = 0;
+        self->_model.pointStepFactor = self->_pointStepFactor.text.intValue;
+    }
+    [scoreboard setModel:self->_model];
+
 }
-*/
-
-
 
 @end

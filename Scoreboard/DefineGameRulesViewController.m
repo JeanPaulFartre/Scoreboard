@@ -17,6 +17,11 @@
 
 int lastStep;
 
+-(BOOL)textFieldShouldReturn:(UITextField *)field{
+
+    [field resignFirstResponder];
+    return YES;
+}
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,6 +36,8 @@ int lastStep;
 {
     [super viewDidLoad];
     self->_pointStepFactor.text = [NSString stringWithFormat:@"%d",self->_model.pointStepFactor];
+    
+    [self->_pointStepFactor setDelegate:self];
 }
 
 -(void)setModel:(Game *)model{

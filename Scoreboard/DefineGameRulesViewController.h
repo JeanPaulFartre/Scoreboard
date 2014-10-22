@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Game.h"
 
-@interface DefineGameRulesViewController : UIViewController
+@interface DefineGameRulesViewController : UIViewController<UITextFieldDelegate>
 
 @property (readwrite, nonatomic)Game *model;
 @property (readwrite, nonatomic) IBOutlet UITextField *pointStepFactor;
